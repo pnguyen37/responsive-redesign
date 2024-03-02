@@ -1,0 +1,221 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+.primaryColor {
+  color: #296233;
+}
+
+.primaryBtnColor {
+  color: white;
+  background-color: #296233;
+}
+
+.secondaryBtnColor {
+  background-color: #ffce47;
+}
+
+h1 {
+  /* font-size: 2.5rem; */
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  padding-top: 12px;
+}
+
+.heading {
+  display: inline-block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button {
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonText {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-weight: 300;
+}
+
+body {
+  margin: 0px;
+}
+
+#navBar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #296233;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.navText {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+li {
+  display: inline;
+  align-self: center;
+}
+
+#scrollable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/eastsidepockets.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 25vh;
+}
+
+#bannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.space3 {
+  gap: 3em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  gap: 24px;
+}
+
+#menuNav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px 0px;
+  border-bottom: 1px solid black;
+}
+
+.smallIcon {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+
+.menuCategory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+}
+
+.menuItemContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 45%;
+  padding: 15px;
+  border: 1px solid #636363;
+}
+
+.menuTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.menuImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.foodName {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-weight: 600;
+}
+
+.foodDesc {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #636363;
+  font-weight: 300;
+}
+
+.price {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-weight: 600;
+}
+
+.addToOrder {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .menuItem {
+    max-width: 40%;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .menuItem {
+    max-width: 90%;
+  }
+}
