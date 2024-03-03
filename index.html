@@ -22,24 +22,25 @@
   <body>
     <!-- nav bar -->
     <div id="navBar">
-      <a class="navText">East Side Pockets</a>
-      <ul class="navLinks">
-        <li>
-          <a class="navText" href="index.html"> Home </a>
-        </li>
-        <li>
-          <a class="navText" href="index.html"> Catering </a>
-        </li>
-        <li>
-          <a class="navText" href="index.html"> Online Ordering </a>
-        </li>
-        <li>
-          <a class="navText" href="index.html"> About Us </a>
-        </li>
-        <li>
-          <a class="navText" href="index.html"> Contact Us </a>
-        </li>
-      </ul>
+        <a class="navText">East Side Pockets</a>
+        <ul class="navLinks">
+            <li>
+            <a class="navText" href="index.html"> Home </a>
+            </li>
+            <li>
+            <a class="navText" href="index.html"> Catering </a>
+            </li>
+            <li>
+            <a class="navText" href="index.html"> Online Ordering </a>
+            </li>
+            <li>
+            <a class="navText" href="index.html"> About Us </a>
+            </li>
+            <li>
+            <a class="navText" href="index.html"> Contact Us </a>
+            </li>
+        </ul>
+        <img class="menuIcon" src="assets/menu.png"></img>
     </div>
 
     <div id="scrollable">
@@ -47,16 +48,34 @@
       <div id="banner">
         <div id="bannerContent">
           <h1 class="heading">Online Ordering</h1>
-          <div class="buttonContainer space3">
-            <button class="secondaryBtnColor">
-              <h3 class="buttonText">Log In</h3>
+          <div class="buttonContainer spacing">
+            <button class="secondaryBtnColor secondaryHover">
+              <span class="buttonText">Log In</span>
             </button>
-            <button class="secondaryBtnColor">
-              <h3 class="buttonText">Options</h3>
-            </button>
-            <button class="secondaryBtnColor">
-              <h3 class="buttonText">Mobile</h3>
-            </button>
+
+            <div class="dropdown">
+                <button class="secondaryButton secondaryBtnColor">
+                    <span class="buttonText">Order Options</span>
+                    <img class="smallIcon arrowIcon" src="assets/black-arrow.png"></img>
+                </button>
+                <ul class="dropdownContent secondaryDropdown">
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Previous Order</span></a></li>
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Group Order</span></a></li>
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Uber Eats</span></a></li>
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Grubhub</span></a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="secondaryButton secondaryBtnColor">
+                    <span class="buttonText">Mobile</span>
+                    <img class="smallIcon arrowIcon" src="assets/black-arrow.png"></img>
+                </button>
+                <ul class="dropdownContent secondaryDropdown">
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Google Play</span></a></li>
+                    <li><a href="index.html"><span class="buttonText secondaryBtnColor">Apple App</span></a></li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -65,21 +84,31 @@
       <div class="widthContainer">
         <h2 class="heading primaryColor">Menu</h2>
         <div id="menuNav">
-            <div class="buttonContainer space3">
-                <button class="primaryBtnColor">
-                <h3 class="buttonText">Category</h3>
+            <div class="buttonContainer spacing">
+                <div class="dropdown">
+                <button class="primaryButton primaryBtnColor">
+                    <span class="buttonText">Category</span>
+                    <img class="smallIcon arrowIcon" src="assets/expand-arrow.png"></img>
                 </button>
-                <div class="buttonContainer">
-                    <img class="smallIcon" src="assets/gluten_free.png"> </img>
-                    <span class="buttonText">- Gluten Free</span>
-                </div>
-                <div class="buttonContainer">
-                    <img class="smallIcon" src="assets/thumbs_up.png"> </img>
-                    <span class="buttonText">- Popular Choice</span>
+                <ul class="dropdownContent primaryDropdown">
+                    <li><a href="index.html"><span class="buttonText primaryBtnColor">Appetizers</span></a></li>
+                    <li><a href="index.html"><span class="buttonText primaryBtnColor">Wraps</span></a></li>
+                </ul>
+            </div>
+                <div id="menuLegend">
+                    <div class="buttonContainer">
+                        <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                        <span class="buttonText"> Gluten Free</span>
+                    </div>
+                    <div class="buttonContainer">
+                        <img class="smallIcon" src="assets/thumbs_up.png"> </img>
+                        <span class="buttonText"> Popular Choice</span>
+                    </div>
                 </div>
             </div>
-            <button class="secondaryBtnColor">
-            <h3 class="buttonText">Checkout</h3>
+            <button class="secondaryBtnColor secondaryHover">
+                <img class="smallIcon" src="assets/shopping-cart.png"></img>
+                <span class="buttonText">Checkout</span>
             </button>
         </div>
 
@@ -87,18 +116,18 @@
         <div class="menuCategory">
             <h3 class="heading primaryColor">Appetizers</h3>
             <div class="menuItemContainer">
-
                 <div class="menuItem">
                     <div class="menuTextContainer">
                         <h4 class="foodName">Falafel Appetizer 6PC</h4>
                         <p class="foodDesc">Made from ground chickpeas, garlic, vegetables with our traditional organic spices, fried in pure vegetable oil. Served with hummus, tzatziki and syrian bread only.</p>
                         <p class="price">$6.94</p>
                         <div class="buttonContainer">
-                            <button class="secondaryBtnColor addToOrder">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
                                 <p class="buttonText">Add to Order</p>
                             </button>
-                            <img class="smallIcon" src="assets/gluten_free.png"> </img>
-                            <img class="smallIcon" src="assets/thumbs_up.png"> </img>
+                                <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                                <img class="smallIcon" src="assets/thumbs_up.png"> </img>
                         </div>
                     </div>
                     <img class="menuImage" src="assets/falafel.jpg"></img>
@@ -106,23 +135,424 @@
 
                 <div class="menuItem">
                     <div class="menuTextContainer">
-                        <h4 class="foodName">Falafel Appetizer 6PC</h4>
-                        <p class="foodDesc">Made from ground chickpeas, garlic, vegetables with our traditional organic spices, fried in pure vegetable oil. Served with hummus, tzatziki and syrian bread only.</p>
+                        <h4 class="foodName">Grape Leaves Appetizer 6PC</h4>
+                        <p class="foodDesc">Stuffed with rice, diced parsley and onions, cooked in olive oil, Served with yogurt cucumber sauce</p>
                         <p class="price">$6.94</p>
                         <div class="buttonContainer">
-                            <button class="secondaryBtnColor addToOrder">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                                <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                        </div>
+                    </div>
+                    <img class="menuImage" src="assets/stuffed_grape_leaves.jpg"></img>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Hummus</h4>
+                        <p class="foodDesc">No dairy products. Unique blend of chickpeas, tahini "sesame seed paste" lemon juice, salt and fresh garlic. Served with syrian bread.</p>
+                        <p class="price">8oz - $5.09 /16oz - $8.33</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                                <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                                <img class="smallIcon" src="assets/thumbs_up.png"> </img>
+                        </div>
+                    </div>
+                    <img class="menuImage" src="assets/hummus.jpg"></img>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Tabouleh</h4>
+                        <p class="foodDesc">The most famous Middle Eastern salad. Made of fresh chopped parsley, cracked wheat, tomato, onions, olive oil and lemon juice</p>
+                        <p class="price">8oz - $5.09 /16oz - $8.33</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Tzatziki</h4>
+                        <p class="foodDesc">A blend of yogurt, sour cream, cucumber, fresh garlic, dried mint and dill. Served with syrian bread/p>
+                        <p class="price">8oz - $5.09 /16oz - $8.33</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
                                 <p class="buttonText">Add to Order</p>
                             </button>
                             <img class="smallIcon" src="assets/gluten_free.png"> </img>
-                            <img class="smallIcon" src="assets/thumbs_up.png"> </img>
                         </div>
                     </div>
-                    <img class="menuImage" src="assets/falafel.jpg"></img>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Baba Ganoush</h4>
+                        <p class="foodDesc">Homemade puree of smoky grilled eggplant and tahini (sesame seed paste) blended with lemon juice and freshly crushed garlic. Served with syrian breaded</p>
+                        <p class="price">8oz - $5.09 /16oz - $8.33</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                            <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Jedra</h4>
+                        <p class="foodDesc">Rice and lentils sauteed onions in olive oil & spices</p>
+                        <p class="price">$4.63</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                            <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-      </div>
+        <!-- vegetarian wraps -->
+        <div class="menuCategory">
+            <h3 class="heading primaryColor">Vegetarian Wraps</h3>
+            <div class="menuItemContainer">
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Falafel Wrap</h4>
+                        <p class="foodDesc">All the toppings with: Falafel</p>
+                        <p class="price">$8.57</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img class="menuImage" src="assets/falafel_wrap.jpg"></img>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Dolma Wrap</h4>
+                        <p class="foodDesc">All the toppings with: Stuffed grape leaves/p>
+                        <p class="price">$8.57</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Greek Veggie Wrap</h4>
+                        <p class="foodDesc">All the toppings with: Feta cheese</p>
+                        <p class="price">$6.94</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Hummus and Tabouleh Wrap</h4>
+                        <p class="foodDesc">All the toppings with: Extra hummus and tabouleh.</p>
+                        <p class="price">$6.94</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Tzatziki</h4>
+                        <p class="foodDesc">A blend of yogurt, sour cream, cucumber, fresh garlic, dried mint and dill. Served with syrian bread/p>
+                        <p class="price">8oz - $5.09 /16oz - $8.33</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                            <img class="smallIcon" src="assets/gluten_free.png"> </img>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+
+        <!-- protein wraps -->
+        <div class="menuCategory">
+            <h3 class="heading primaryColor">Protein Wraps</h3>
+            <div class="menuItemContainer">
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Chicken Kabob Wrap (Halal حلال)</h4>
+                        <p class="foodDesc">All the toppings with: Grilled chicken tenders marinated in olive oil, lemon juice, fresh garlic, oregano and organic spice</p>
+                        <p class="price">$10.42</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                    <img class="menuImage" src="assets/chickenwrap.jpg"></img>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Gyro Wrap (Halal حلال)</h4>
+                        <p class="foodDesc">All the toppings with: Strips of Greek style seasoned gyro meat.</p>
+                        <p class="price">10.42</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Kafta Kabob Wrap</h4>
+                        <p class="foodDesc">All the toppings with: "Middle Eastern hamburger” freshly ground beef with Middle Eastern seasonings.</p>
+                        <p class="price">$10.42</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Beef Steak Kabob Wrap</h4>
+                        <p class="foodDesc">All the toppings with: Extra lean beef thinly sliced and seasoned</p>
+                        <p class="price">$10.42</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+        <!-- plates -->
+        <div class="menuCategory">
+            <h3 class="heading primaryColor">Plates</h3>
+            <div class="menuItemContainer">
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Jedra Plate</h4>
+                        <p class="foodDesc">Rice and lentils with sautéed onions in olive oil served with small garden salad.</p>
+                        <p class="price">$7.41</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Falafel Plate</h4>
+                        <p class="foodDesc">Served with small garden salad and Jedra.</p>
+                        <p class="price">12.50</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Dolma Plate</h4>
+                        <p class="foodDesc">Served with small garden salad and Jedra.</p>
+                        <p class="price">$12.50</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Chicken Kabob Plate</h4>
+                        <p class="foodDesc">Served with small garden salad and Jedra./p>
+                        <p class="price">$12.50</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+
+        <!-- desserts -->
+        <div class="menuCategory">
+            <h3 class="heading primaryColor">Dessert</h3>
+            <div class="menuItemContainer">
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Lady Finger Baklava</h4>
+                        <p class="foodDesc">Homemade phyllo dough stacked with honey and cashews</p>
+                        <p class="price">$1.39</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Classic Baklava</h4>
+                        <p class="foodDesc">Homemade phyllo dough stacked with honey and walnuts</p>
+                        <p class="price">1.39</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Diamond Baklava</h4>
+                        <p class="foodDesc">Homemade phyllo dough stacked with honey and pistachios</p>
+                        <p class="price">$1.39</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Bird's Nest Baklava</h4>
+                        <p class="foodDesc">Served with small garden salad and Jedra./p>
+                        <p class="price">$1.39</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+        <!-- beverages -->
+        <div class="menuCategory">
+            <h3 class="heading primaryColor">Beverages</h3>
+            <div class="menuItemContainer">
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Soda</h4>
+                        <p class="price">$2.78</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Ice Tea</h4>
+                        <p class="price">2.78</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Water</h4>
+                        <p class="price">$1.86</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuItem">
+                    <div class="menuTextContainer">
+                        <h4 class="foodName">Vitamin Water</h4>
+                        <p class="price">$2.78</p>
+                        <div class="buttonContainer">
+                            <button class="secondaryBtnColor addToOrder secondaryHover">
+                                <img class="addIcon" src="assets/plus.png"></img>
+                                <p class="buttonText">Add to Order</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+
     </div>
   </body>
 </html>

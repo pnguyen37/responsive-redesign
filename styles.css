@@ -17,8 +17,70 @@
   background-color: #296233;
 }
 
+.primaryBtnColor:hover {
+  background-color: #183a1e;
+}
+
 .secondaryBtnColor {
+  color: black;
   background-color: #ffce47;
+}
+
+.secondaryBtnColor:hover {
+  background-color: #e0a500;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 8px 16px;
+  border-radius: 15px;
+  /* min-width: 100px; */
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.primaryDropdown {
+  color: white;
+  background-color: #296233;
+}
+
+.secondaryDropdown {
+  color: black;
+  background-color: #ffce47;
+}
+
+.dropdownContent a {
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown:hover .secondaryButton {
+  background-color: #e0a500;
+}
+
+.dropdown:hover .primaryButton {
+  background-color: #183a1e;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+span {
+  font-size: 1rem;
 }
 
 h1 {
@@ -41,17 +103,19 @@ h2 {
 }
 
 button {
+  display: flex;
+  align-items: center;
   width: fit-content;
   padding: 4px 16px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .buttonText {
   margin-block-start: 0em;
   margin-block-end: 0em;
-  font-weight: 300;
 }
 
 body {
@@ -60,12 +124,20 @@ body {
 
 #navBar {
   height: 60px;
+  background-color: #296233;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
-  background-color: #296233;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.menuIcon {
+  display: none;
 }
 
 .navLinks {
@@ -79,14 +151,16 @@ body {
   font-size: 1rem;
   font-weight: 300;
   color: white;
+  cursor: pointer;
 }
 
 li {
   display: inline;
-  align-self: center;
+  align-self: flex-start;
 }
 
 #scrollable {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,13 +183,12 @@ li {
   gap: 2em;
 }
 
-.space3 {
+.spacing {
   gap: 3em;
 }
 
 .buttonContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -123,24 +196,31 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   max-width: 1000px;
   gap: 24px;
+  padding: 0px 30px;
 }
 
 #menuNav {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: inherit;
   justify-content: space-between;
   padding: 8px 0px;
+  width: 100%;
   border-bottom: 1px solid black;
+  background-color: white;
+  gap: 1em;
+  position: sticky;
+  top: 60px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .smallIcon {
   width: 20px;
   height: 20px;
-  padding: 4px;
+  padding-right: 6px;
 }
 
 .menuCategory {
@@ -151,24 +231,36 @@ li {
   gap: 12px;
 }
 
-.menuItemContainer {
+#menuLegend {
+  display: flex;
+  gap: 3em;
+}
+
+/* .menuItemContainer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   justify-content: center;
+} */
+
+.menuItemContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .menuItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 45%;
   padding: 15px;
   border: 1px solid #636363;
 }
 
 .menuTextContainer {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,6 +272,8 @@ li {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  object-position: top left;
+  margin-left: 10px;
 }
 
 .foodName {
@@ -201,21 +295,67 @@ li {
   font-weight: 600;
 }
 
+.addIcon {
+  width: 12px;
+  padding-right: 6px;
+}
+
+.arrowIcon {
+  width: 15px;
+  height: 15px;
+  padding-left: 6px;
+  padding-right: 0px;
+}
 .addToOrder {
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
 }
 
 @media screen and (max-width: 770px) {
-  .menuItem {
+  /* .menuItem {
     max-width: 40%;
+  } */
+  .spacing {
+    gap: 1em;
   }
+  .menuIcon {
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+  }
+
   .navLinks {
     display: none;
+  }
+  /* p {
+    font-size: 12px;
+  } */
+  span {
+    font-size: 0.75rem;
+  }
+  .menuItemContainer {
+    grid-template-columns: 1fr;
+  }
+
+  #menuLegend {
+    gap: 1em;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .menuItem {
-    max-width: 90%;
+  .widthContainer {
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .spacing {
+    gap: 0.5rem;
+  }
+
+  #menuLegend {
+    flex-direction: column;
+    gap: 0em;
   }
 }
