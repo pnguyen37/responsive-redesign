@@ -84,10 +84,8 @@ span {
 }
 
 h1 {
-  /* font-size: 2.5rem; */
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -152,10 +150,11 @@ body {
   font-weight: 300;
   color: white;
   cursor: pointer;
+  text-align: center;
 }
 
 li {
-  display: inline;
+  display: inline-flex;
   align-self: flex-start;
 }
 
@@ -190,6 +189,7 @@ li {
 .buttonContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .widthContainer {
@@ -312,6 +312,67 @@ li {
   margin-right: 6px;
 }
 
+#footer {
+  background-color: #296233;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 24px 0px;
+  gap: 24px;
+}
+
+#footerGrid {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.footerCol {
+  padding-inline-start: 0em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.footerText {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: white;
+  text-align: left;
+}
+
+.captionText {
+  color: white;
+  font-size: 0.5rem;
+  align-self: center;
+}
+
+.footerIcon {
+  height: 35px;
+  padding: 0px 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+.regular {
+  font-weight: 300;
+}
+
+a {
+  cursor: pointer;
+  display: inline-flex;
+}
+
 @media screen and (max-width: 770px) {
   /* .menuItem {
     max-width: 40%;
@@ -347,6 +408,10 @@ li {
   .widthContainer {
     padding: 0px 16px;
   }
+  #footerButtons {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -357,5 +422,17 @@ li {
   #menuLegend {
     flex-direction: column;
     gap: 0em;
+  }
+
+  #footer {
+    height: fit-content;
+  }
+
+  #footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  li {
+    align-self: center;
   }
 }
