@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  font-feature-settings: "liga" 1, "calt" 1; 
 }
 @supports (font-variation-settings: normal) {
   :root {
@@ -436,9 +436,7 @@ a {
   .navLinks {
     display: none;
   }
-  /* p {
-    font-size: 12px;
-  } */
+ 
   span {
     font-size: 0.75rem;
   }
