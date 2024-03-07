@@ -17,7 +17,7 @@
   <!-- page content goes into <body> -->
   <body>
     <!-- nav bar -->
-    <div id="navBar">
+    <nav id="navBar">
       <a class="navText">East Side Pockets</a>
       <ul class="navLinks">
         <li>
@@ -33,12 +33,12 @@
           <div class="dropdown">
             <div class="buttonContainer">
               <span id="aboutText" class="navText">About Us</span>
-              <img class="smallIcon arrowIcon" src="assets/expand-arrow.png" alt="white downward expand arrow"></img>
+              <img class="smallIcon arrowIcon" src="assets/expand-arrow.png" alt="white downward expand arrow"/>
             </div>
             <ul class="dropdownContent primaryDropdown">
-              <li><a><span class="navText ">Hours</span></a></li>
-              <li><a><span class="navText ">Reviews</span></a></li>
-              <li><a><span class="navText ">Gallery</span></a></li>
+              <li><a class="navText ">Hours</a></li>
+              <li><a class="navText ">Reviews</a></li>
+              <li><a class="navText ">Gallery</a></li>
             </ul>
           </div>
         </li>
@@ -46,8 +46,10 @@
           <a class="navText"> Contact Us </a>
         </li>
       </ul>
-      <img class="menuIcon" src="assets/menu.png" alt="menu icon (hamburger menu)"></img>
-    </div>
+      <a class="menuIcon" aria-label="hamburger menu icon">
+        <img class="menuIcon" src="assets/menu.png" alt="menu icon (hamburger menu)"/>
+      </a>
+    </nav>
 
     <div id="scrollable">
       <!-- banner -->
@@ -61,9 +63,9 @@
             </button>
 
             <div class="dropdown">
-              <button class="secondaryButton secondaryBtnColor">
+              <button class="secondaryButton secondaryBtnColor" aria-label="dropdown button to view ordering options">
                 <span class="buttonText">Order Options</span>
-                <img class="smallIcon arrowIcon" src="assets/black-arrow.png" alt="black downward expand arrow"></img>
+                <img class="smallIcon arrowIcon" src="assets/black-arrow.png" alt="black downward expand arrow"/>
               </button>
               <ul class="dropdownContent secondaryDropdown">
                 <li><a><span class="buttonText secondaryBtnColor">Previous Order</span></a></li>
@@ -74,9 +76,9 @@
             </div>
 
             <div class="dropdown">
-              <button class="secondaryButton secondaryBtnColor">
+              <button class="secondaryButton secondaryBtnColor" aria-label="dropdown button to view mobile apps">
                 <span class="buttonText">Mobile</span>
-                <img class="smallIcon arrowIcon" src="assets/black-arrow.png" alt="black downward expand arrow"></img>
+                <img class="smallIcon arrowIcon" src="assets/black-arrow.png" alt="black downward expand arrow"/>
               </button>
               <ul class="dropdownContent secondaryDropdown">
                 <li><a><span class="buttonText secondaryBtnColor">Google Play</span></a></li>
@@ -93,9 +95,9 @@
         <div id="menuNav">
           <div class="buttonContainer spacing">
             <div class="dropdown">
-              <button class="primaryButton primaryBtnColor">
+              <button class="primaryButton primaryBtnColor" aria-label="dropdown button to view menu categories">
                 <span class="buttonText">Category</span>
-                <img class="smallIcon arrowIcon" src="assets/expand-arrow.png" alt="white downward expand arrow"></img>
+                <img class="smallIcon arrowIcon" src="assets/expand-arrow.png" alt="white downward expand arrow"/>
               </button>
               <ul class="dropdownContent primaryDropdown">
                 <li><a><span class="buttonText primaryBtnColor">Appetizers</span></a></li>
@@ -121,7 +123,7 @@
           </div>
 
           <button class="secondaryBtnColor secondaryHover">
-            <img class="smallIcon" src="assets/shopping-cart.png" alt="shopping cart icon"></img>
+            <img class="smallIcon" src="assets/shopping-cart.png" alt="shopping cart icon"/>
             <span class="buttonText">Order</span>
           </button>
         </div>
@@ -139,14 +141,14 @@
                 <p class="price">$6.94</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt="add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt="add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                   <img class="smallIcon" src="assets/gluten_free.png" alt="green gluten free icon"> </img>
                   <img class="smallIcon" src="assets/thumbs_up.png"  alt="thumbs up icon"> </img>
                 </div>
               </div>
-              <img class="menuImage" src="assets/falafel.jpg" alt="falafel"></img>
+              <img class="menuImage" src="assets/falafel.jpg" alt="falafel"/>
             </div>
 
             <div class="menuItem">
@@ -156,13 +158,13 @@
                 <p class="price">$6.94</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt="add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt="add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                   <img class="smallIcon" src="assets/gluten_free.png" alt="green gluten free icon"> </img>
                 </div>
               </div>
-              <img class="menuImage" src="assets/stuffed_grape_leaves.jpg" alt="stuffed grape leaves"></img>
+              <img class="menuImage" src="assets/stuffed_grape_leaves.jpg" alt="stuffed grape leaves"/>
             </div>
 
             <div class="menuItem">
@@ -172,14 +174,14 @@
                 <p class="price">8oz - $5.09 /16oz - $8.33</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png"  alt="add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png"  alt="add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                   <img class="smallIcon" src="assets/gluten_free.png" alt="green gluten free icon"> </img>
                   <img class="smallIcon" src="assets/thumbs_up.png"  alt="thumbs up icon"> </img>
                 </div>
               </div>
-              <img class="menuImage" src="assets/hummus.jpeg" alt="hummus"></img>
+              <img class="menuImage" src="assets/hummus.jpeg" alt="hummus"/>
             </div>
 
             <div class="menuItem">
@@ -189,7 +191,7 @@
                   <p class="price">8oz - $5.09 /16oz - $8.33</p>
                   <div class="buttonContainer">
                       <button class="secondaryBtnColor addToOrder secondaryHover">
-                          <img class="addIcon" src="assets/plus.png" alt="add symbol"></img>
+                          <img class="addIcon" src="assets/plus.png" alt="add symbol"/>
                           <p class="buttonText">Add to Order</p>
                       </button>
                   </div>
@@ -199,11 +201,11 @@
             <div class="menuItem">
               <div class="menuTextContainer">
                   <h4 class="foodName">Tzatziki</h4>
-                  <p class="foodDesc">A blend of yogurt, sour cream, cucumber, fresh garlic, dried mint and dill. Served with syrian bread/p>
+                  <p class="foodDesc">A blend of yogurt, sour cream, cucumber, fresh garlic, dried mint and dill. Served with syrian bread</p>
                   <p class="price">8oz - $5.09 /16oz - $8.33</p>
                   <div class="buttonContainer">
                     <button class="secondaryBtnColor addToOrder secondaryHover">
-                      <img class="addIcon" src="assets/plus.png" alt="add symbol"></img>
+                      <img class="addIcon" src="assets/plus.png" alt="add symbol"/>
                       <p class="buttonText">Add to Order</p>
                     </button>
                     <img class="smallIcon" src="assets/gluten_free.png" alt="green gluten free icon"> </img>
@@ -218,7 +220,7 @@
                   <p class="price">8oz - $5.09 /16oz - $8.33</p>
                   <div class="buttonContainer">
                     <button class="secondaryBtnColor addToOrder secondaryHover">
-                      <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                      <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                       <p class="buttonText">Add to Order</p>
                     </button>
                     <img class="smallIcon" src="assets/gluten_free.png" alt="gluten free icon"> </img>
@@ -233,7 +235,7 @@
                 <p class="price">$4.63</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                   <img class="smallIcon" src="assets/gluten_free.png" alt="gluten free icon"> </img>
@@ -257,22 +259,22 @@
                 <p class="price">$8.57</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
               </div>
-              <img class="menuImage" src="assets/falafel_wrap.jpg" alt="falafel wrap"></img>
+              <img class="menuImage" src="assets/falafel_wrap.jpg" alt="falafel wrap"/>
             </div>
 
             <div class="menuItem">
               <div class="menuTextContainer">
                 <h4 class="foodName">Dolma Wrap</h4>
-                <p class="foodDesc">All the toppings with: Stuffed grape leaves/p>
+                <p class="foodDesc">All the toppings with: Stuffed grape leaves</p>
                 <p class="price">$8.57</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -286,7 +288,7 @@
                 <p class="price">$6.94</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt="add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt="add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -300,7 +302,7 @@
                 <p class="price">$6.94</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -314,7 +316,7 @@
                 <p class="price">$6.94</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -338,12 +340,12 @@
                 <p class="price">$10.42</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
               </div>
-              <img class="menuImage" src="assets/chickenwrap.jpg" alt="chicken kabob wrap"></img>
+              <img class="menuImage" src="assets/chickenwrap.jpg" alt="chicken kabob wrap"/>
             </div>
 
             <div class="menuItem">
@@ -353,7 +355,7 @@
                 <p class="price">$10.42</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -367,7 +369,7 @@
                 <p class="price">$10.42</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -381,7 +383,7 @@
                 <p class="price">$10.42</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -401,7 +403,7 @@
                 <p class="price">$7.41</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -415,7 +417,7 @@
                 <p class="price">$12.50</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -429,7 +431,7 @@
                 <p class="price">$12.50</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -443,7 +445,7 @@
                 <p class="price">$12.50</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -464,7 +466,7 @@
                 <p class="price">$1.39</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -478,7 +480,7 @@
                 <p class="price">$1.39</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -492,7 +494,7 @@
                 <p class="price">$1.39</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -506,7 +508,7 @@
                 <p class="price">$1.39</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -525,7 +527,7 @@
                 <p class="price">$2.78</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -538,7 +540,7 @@
                 <p class="price">$2.78</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -551,7 +553,7 @@
                 <p class="price">$1.86</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -564,7 +566,7 @@
                 <p class="price">$2.78</p>
                 <div class="buttonContainer">
                   <button class="secondaryBtnColor addToOrder secondaryHover">
-                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"></img>
+                    <img class="addIcon" src="assets/plus.png" alt=" add symbol"/>
                     <p class="buttonText">Add to Order</p>
                   </button>
                 </div>
@@ -573,71 +575,72 @@
           </div>
         </div>
       </div>
-
-      <div id="footer">
-        <div id="footerGrid">
-          <ul class="footerCol">
-            <li>
-              <span class="footerText bold"> Learn More </span>
-            </li>
-            <li>
-              <a class="footerText regular"> Home </a>
-            </li>
-            <li>
-              <a class="footerText regular"> About Us </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Hours </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Gallery </a>
-            </li>
-          </ul>
-          <ul class="footerCol">
-            <li>
-              <span class="footerText bold"> Order Now </span>
-            </li>
-            <li>
-              <a class="footerText regular"> Log In </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Catering </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Online Ordering </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Menu </a>
-            </li>
-          </ul>
-          <ul class="footerCol">
-            <li>
-              <span class="footerText bold"> Give Feedback </span>
-            </li>
-            <li>
-              <a class="footerText regular"> Contact Us </a>
-            </li>
-            <li>
-              <a class="footerText regular"> Reviews </a>
-            </li>
-          </ul>
-        </div>
-        <span class="navText">278 Thayer St., Providence, RI 02906  |  Phone: 401-453-1100 </span>
-        <div id="footerButtons" class="buttonContainer">
-          <div class="buttonContainer">
-            <a><img class="footerIcon"src="assets/facebook.png" alt="Facebook logo (blue app)"/></a>
-            <a><img class="footerIcon"src="assets/yelp.png" alt="Yelp logo (red app)"/></a>
-            <a><img class="footerIcon"src="assets/google-plus.png" alt="Google plus logo (grey app)"/></a>
-            <a><img class="footerIcon"src="assets/trip.png" alt="Trip Advisor logo (green app)"/></a>
-          </div>
-          <div class="buttonContainer">
-            <a><img class="footerIcon"src="assets/googleplay.png" alt="Google Play icon (black box with play button on it)"/></a>
-            <a><img class="footerIcon"src="assets/applestore.png" alt="App store icon (black box with phone on it)"/></a>
-          </div>
-        </div>
-        <a><span class="captionText">Privacy & Terms of Service</span></a>
-      </div>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div id="footerGrid">
+        <ul class="footerCol">
+          <li>
+            <span class="footerText bold"> Learn More </span>
+          </li>
+          <li>
+            <a class="footerText regular"> Home </a>
+          </li>
+          <li>
+            <a class="footerText regular"> About Us </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Hours </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Gallery </a>
+          </li>
+        </ul>
+        <ul class="footerCol">
+          <li>
+            <span class="footerText bold"> Order Now </span>
+          </li>
+          <li>
+            <a class="footerText regular"> Log In </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Catering </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Online Ordering </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Menu </a>
+          </li>
+        </ul>
+        <ul class="footerCol">
+          <li>
+            <span class="footerText bold"> Give Feedback </span>
+          </li>
+          <li>
+            <a class="footerText regular"> Contact Us </a>
+          </li>
+          <li>
+            <a class="footerText regular"> Reviews </a>
+          </li>
+        </ul>
+      </div>
+      <span class="navText">278 Thayer St., Providence, RI 02906  |  Phone: 401-453-1100 </span>
+      <div id="footerButtons" class="buttonContainer">
+        <div class="buttonContainer">
+          <a aria-label="facebook link"><img class="footerIcon"src="assets/facebook.png" alt="Facebook logo (blue app)"/></a>
+          <a aria-label="yelp link"><img class="footerIcon"src="assets/yelp.png" alt="Yelp logo (red app)"/></a>
+          <a aria-label="google plus link"><img class="footerIcon"src="assets/google-plus.png" alt="Google plus logo (grey app)"/></a>
+          <a aria-label="trip advisor link"><img class="footerIcon"src="assets/trip.png" alt="Trip Advisor logo (green app)"/></a>
+        </div>
+        <div class="buttonContainer">
+          <a aria-label="google play link"><img class="footerIcon"src="assets/googleplay.png" alt="Google Play icon (black box with play button on it)"/></a>
+          <a aria-label="ios appstore link"><img class="footerIcon"src="assets/applestore.png" alt="App store icon (black box with phone on it)"/></a>
+        </div>
+      </div>
+      <a><span class="captionText">Privacy & Terms of Service</span></a>
+    </footer>
 
   </body>
   
